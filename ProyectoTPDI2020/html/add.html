@@ -1,0 +1,31 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Clinic Adm.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+    </head>
+    <body>
+
+        <section class="articulos"> 
+            <article class="articulo">
+                    <a href="/table/{{tablename}}/" style="padding:5px 10px;" class="botonComprar">ATRAS</a>               
+                    <h1>AÑADIR ENTRADA</h1>
+                <hr>
+                <form action="/add/{{tablename}}/makeAdd=True" method="POST">
+                    {%for item in query%}
+                        <label for="{{item}}">{{item}}</label>
+                        <input placeholder="{{item}}" class="campo" name="{{item}}" type="text" style="width: 100%; margin-top: 5px;">
+                    {%endfor%}
+
+                    <input value="OK" type="submit"></input>
+                </form>
+            </article>
+         </section>
+    </body>
+</html>

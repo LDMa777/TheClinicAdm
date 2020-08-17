@@ -1,0 +1,1 @@
+{ "_id" : { "$oid" : "5ef658f1517a1d6c786a5900" }, "Id" : "1", "Nombre" : "Horacio", "Apellido" : "Gennari", "DNI" : "18665482", "Medico_Cabecera" : null, "Nro_Historia_Clinica" : null, "Obra_Social" : "OSDE", "Direccion" : "Darwin 88766", "Provincia" : "CABA", "Telefono" : "11549881652" }

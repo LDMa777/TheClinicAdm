@@ -1,0 +1,4 @@
+{ "_id" : { "$oid" : "5ef65761517a1d6c786a58f8" }, "Id" : "1", "NombreUsuario" : "Juan", "Contraseña" : "asd" }
+{ "_id" : { "$oid" : "5ef6577a517a1d6c786a58fa" }, "Id" : "2", "NombreUsuario" : "Denise", "Contraseña" : "asd" }
+{ "_id" : { "$oid" : "5ef65783517a1d6c786a58fb" }, "Id" : "3", "NombreUsuario" : "Leonardo", "Contraseña" : "asd" }
+{ "_id" : { "$oid" : "5ef65b4966ddc97e392cdaa4" }, "Id" : "4", "NombreUsuario" : "Juanma", "Contraseña" : "asd" }

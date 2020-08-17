@@ -1,0 +1,35 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Clinic Adm.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+    </head>
+    <body>
+
+        <section class="articulos"> 
+            <article class="articulo">
+                    <h1>Ingrese al sistema</h1>
+                <hr>
+
+                <form action="/controlLogin/" method="POST">
+                    {% if ingresovalido == "False" %}
+                        <p style='color:red'>Ingreso Invalido</p>
+                    {%endif%}
+                    <label for="nombre">Nombre de usuario</label>
+                    <input placeholder="Nombre de usuario" value="{{ nombreUsuario }}" class="campo" name="nombre" type="text" style="width: 100%; margin-top: 5px;">
+
+                    <label for="contra">Contraseña</label>
+                    <input placeholder="Contraseña" value="{{ Contraseña }}" class="campo" name="contra" type="password" style="width: 100%; margin-top: 5px;">
+
+                    <input value="OK" type="submit"></input>
+                </form>
+            </article>
+         </section>
+    </body>
+</html>

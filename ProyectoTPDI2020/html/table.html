@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Clinic Adm.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+    </head>
+    <body>
+        {%if deleted%}
+            {%if deleted == "True"%}
+                <p style='color:red; text-align: center;'>Entrada borrada exitosamente</p>
+            {%endif%}
+        {%endif%}
+        
+        {%if edited%}
+            {%if edited == "True"%}
+                <p style='color:green; text-align: center;'>Entrada editada exitosamente</p>
+            {%endif%}
+        {%endif%}
+                
+        {%if added%}
+            {%if added == "True"%}
+                <p style='color:green; text-align: center;'>Entrada agregada exitosamente</p>
+            {%endif%}
+        {%endif%}
+
+        <section class="articulos"> 
+            <article class="articulo">
+                <a href="/controlpanelAdmin/" class="botonComprar">ATRAS</a>
+                <a href="/add/{{tablename}}" class="botonComprar">AÑADIR ENTRADA</a>
+            </article>
+         </section>
+        <table class="greenTable" style="text-align: center;">
+            <thead>
+                <tr>
+                    {%for item in listDB.0%}
+                        <th>{{item}}</th>
+                    {%endfor%}
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    {%for item in listDB.0%}
+                        <td>&nbsp;</td>
+                    {%endfor%}
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                {%for item in listDB%}
+                    <tr>
+                        {%for campo in item%}
+                            <td>{{item|get_item:campo}}</td>
+                        {%endfor%}
+                        <td><a href="/edit/{{tablename}}/{{item.Id}}" class="botonEdicion">EDITAR</a></td>
+                        <td><a href="/delete/{{tablename}}/{{item.Id}}" class="botonEdicion">BORRAR</a></td>
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </body>
+</html>
