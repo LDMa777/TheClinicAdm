@@ -1,0 +1,281 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+    background: rgb(244,242,242);
+}
+
+.articulos
+{
+    text-align: right;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.logo
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.registro
+{
+    padding-bottom: 10px;
+    padding-top: 0;
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+}
+
+.articulo
+{
+    width: 30%;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+	box-sizing: border-box;
+	background: white;
+	border-style: solid;
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.links
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header
+{
+    box-sizing: border-box;
+	background: white;
+	border-style: solid;
+    border-bottom-color: black;
+    border-width: 0px 0px 1px 0px;
+    padding: 0;
+}
+
+.imagen
+{
+    border: solid;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px 1px 1px 1px;
+    width: 100%;
+    height: auto;
+}
+
+.botonComprar 
+{
+	background-color:#44c767;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 39px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    display: inline-block;
+    margin: 5;
+}
+.botonComprar:hover 
+{
+	background-color:#5cbf2a;
+}
+.botonComprar:active 
+{
+	position:relative;
+	top:1px;
+}
+
+.botonEdicion 
+{
+	background-color:#44c767;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 10px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    display: inline-block;
+    margin: 5;
+}
+.botonEdicion:hover 
+{
+	background-color:#5cbf2a;
+}
+.botonEdicion:active 
+{
+	position:relative;
+	top:1px;
+}
+
+.campo {
+    padding: 5px;
+    font-size: 14px;
+    border-width: 1px;
+    border-color: #18ab29;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.campo:focus {
+    outline:none;
+}
+
+#fendt1000banner
+{
+    width: 100%;
+    height: auto;
+}
+
+#fendt1000_1
+{
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/*TABLA*/
+table.greenTable 
+{
+    border: 0px solid #24943A;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+table.greenTable td, table.greenTable th 
+{
+    border: 1px solid #24943A;
+    padding: 6px 8px;
+}
+  
+table.greenTable tbody td 
+{
+  font-size: 13px;
+}
+
+table.greenTable thead 
+{
+  background: #24943A;
+  background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  border-bottom: 0px solid #444444;
+}
+
+table.greenTable thead th 
+{
+  font-size: 19px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: center;
+  border-left: 2px solid #24943A;
+}
+
+table.greenTable thead th:first-child
+{
+  border-left: none;
+}
+
+table.greenTable tfoot 
+{
+  font-size: 13px;
+  font-weight: bold;
+  color: #F0F0F0;
+  background: #24943A;
+  background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  border-top: 1px solid #24943A;
+}
+
+table.greenTable tfoot td 
+{
+  font-size: 13px;
+}
+
+/*TABLET*/
+@media(min-width: 720px) and (max-width: 1200px)
+{
+    .articulos
+    {
+        text-align: center;
+    }
+    
+    .articulo
+    {
+        width: 40%;
+    }
+
+    .logo
+    {
+        display: inline-block;
+        text-align: center;
+        width: 95%;
+    }
+
+    .registro
+    {
+        padding-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*TELEFONO*/
+@media(max-width: 720px) 
+{
+
+    .articulos
+    {
+        text-align: center;
+        display: block;
+    }
+    
+    .articulo
+    {
+        width: 90%;
+    }
+
+    .logo
+    {
+        display: inline-block;
+        text-align: center;
+        width: 95%;
+    }
+
+    .registro
+    {
+        padding-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
