@@ -12,8 +12,12 @@ def get_item(dictionary, key):
     return dictionary.get(key)
 
 def makeConnection():
-    connection = pymongo.MongoClient('mongodb://localhost:27017/', connect=False, maxPoolSize=None)
-    db = connection.clinicadm
+    # connection = pymongo.MongoClient('mongodb://localhost:27017/', connect=False, maxPoolSize=None)
+    # db = connection.clinicadm
+
+    client = pymongo.MongoClient("mongodb+srv://lifesgood:asd1234@cluster0.l401i.mongodb.net/<clinicadm>?retryWrites=true&w=majority")
+    db = client.clinicadm 
+
     return db
 
 def ingreso(request, ingresovalido = "True"):
