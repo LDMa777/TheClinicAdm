@@ -1,1 +1,1 @@
-web: py manage:app runserver 127.0.0.1:8080
+web: python manage.py runserver localhost:8080
