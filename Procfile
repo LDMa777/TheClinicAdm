@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:8080
+web: python manage.py runserver 200.122.71.139/32 
