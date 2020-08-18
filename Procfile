@@ -1,1 +1,1 @@
-web: wsgi.py:application
+web: python manage.py runserver 80
