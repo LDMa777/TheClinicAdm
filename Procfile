@@ -1,1 +1,1 @@
-web: ProyectoTPDI2020.wsgi:application
+web: wsgi.py:application
